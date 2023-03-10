@@ -38,3 +38,10 @@ def test_with_valid_cookie():
     response = requests.get(credentials.URL_GET, cookies=cookies)
     assert response.status_code == 200
 
+    
+def test_with_invalid_cookie():
+    # Test with invalid cookie and request to recent activity api
+    URL_INSIDE = "https://k8s.stable.on-premise.datalore.io/vfs/recent"
+    invalid_cookie = {"DATALORESESSIONID": "INVALIDCOOKIE"}
+    response = requests.get(URL_INSIDE, cookies=invalid_cookie)
+    assert response.status_code == 403
