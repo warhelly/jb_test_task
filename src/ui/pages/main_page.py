@@ -1,4 +1,4 @@
-from src.UI.utils.Helpers import Actions
+from src.ui.utils.helpers import Actions
 from selenium.webdriver.common.by import By
 
 

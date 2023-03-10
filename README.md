@@ -1,1 +1,1 @@
-# jb_test_task
+Test task for JetBrains

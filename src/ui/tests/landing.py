@@ -1,6 +1,6 @@
 import credentials
-from src.UI.pages.mainPage import AuthHelper
-from src.UI.pages.registration_page import RegistrationHelper
+from src.ui.pages.main_page import AuthHelper
+from src.ui.pages.registration_page import RegistrationHelper
 
 
 def test_check_elements(browser):
